@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.boxStyle{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:75vh;
+  }
+.homeImageStyle{
+    max-height: 750px;
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(10px); }
+}
+
+.x-scroller{
+    overflow-x: scroll; 
+    overflow-y:hidden;
+    width: 80vw;
+    white-space: nowrap;
+}
+.currency{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90vw;
+    justify-content: space-evenly;
+}
+.currencyCard img{
+    margin-top: 25px;
+    height: 3rem;
+    width: 3rem;
+}
+.currencyCard{
+    height:10rem;
+    width: 10rem;
+    margin: 10px 0px;
+    border: 2 px solid black
+}
+.card:hover{
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 1.5);
+}
+.currencyCard .card-text{
+    text-align: center;
+    color: black;
+    font-family: none;
+}
+.currDetailImg{
+    max-height: 200px;
+}
+.aboutContainer{
+    min-height: 80vh;
+}
+.FooterContainer{
+    height: 8rem;
+    background-color: black;
+    color: white;
+}
+.FooterContainer img{
+    height: 90px;
+    width: auto;
+}
+.FooterContainer p{
+    font-size: small;
+}
+.PreLoading {
+    height: 500px;
+    width: auto;
+}
+.Loading{
+    display:flex ;
+    justify-content:center ;
+    align-items: center;
+}
+/* .Con img{
+    height: 300px;
+    width: auto;
+} */
+.Con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
