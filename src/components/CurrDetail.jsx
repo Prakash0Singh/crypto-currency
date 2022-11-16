@@ -50,7 +50,12 @@ const CurrDetail = () => {
             </div>
             <div className="col-12 ">
               {coin.name} <br />
-              <p className="fw-bold fs-1">{currencySymbol}{coin.market_data.current_price[currency]}</p>
+               <p className="fw-bold fs-1 mb-0">{currencySymbol}{coin.market_data.current_price[currency]}</p>
+              <p>{
+                    coin.market_data.price_change_percentage_24h > 0
+                      ? <i className="bi bi-arrow-up text-success fw-bold">{coin.market_data.price_change_percentage_24h }%</i>
+                      : <i className="bi bi-arrow-down text-danger fw-bold">{coin.market_data.price_change_percentage_24h }%</i>
+              }</p>
               <button className="btn btn-dark btn-lg">#{coin.market_cap_rank}</button>
             </div>
             <div className="col-12 mt-3">
