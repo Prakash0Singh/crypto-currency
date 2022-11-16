@@ -46,7 +46,9 @@
     border: 2 px solid black
 }
 .card:hover{
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 1.5);
+    box-shadow: -2px 3px 33px 3px rgba(163,148,148,0.75);
+-webkit-box-shadow: -2px 3px 33px 3px rgba(163,148,148,0.75);
+-moz-box-shadow: -2px 3px 33px 3px rgba(163,148,148,0.75);
 }
 .currencyCard .card-text{
     text-align: center;
